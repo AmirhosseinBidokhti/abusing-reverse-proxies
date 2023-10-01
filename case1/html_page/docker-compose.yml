@@ -1,0 +1,10 @@
+version: '3'
+services:
+  html_page:
+    build:
+      context: ./index.html   # Path to the Dockerfile for HTML page 1
+    networks:
+      - my_network
+networks:
+  my_network:
+
