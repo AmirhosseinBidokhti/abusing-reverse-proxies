@@ -1,0 +1,19 @@
+
+Vulnerable test cases:
+
+	Reverse-Proxy
+		Express-API
+			- normal endpoint
+			- hidden endpoint
+
+	Reverse-Proxy
+		Express-API
+		Hidden-API
+
+	Reverse-Proxy
+
+
+
+- Apache
+- Nginx
+- HA proxy

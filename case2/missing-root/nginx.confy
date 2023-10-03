@@ -1,0 +1,26 @@
+server {
+    listen 80;
+    server_name api.company.com;  # Replace with your domain or desired hostname
+
+    include /etc/nginx/backends.conf;
+
+    location /admin {
+	return 404;
+    }
+
+
+    location /console/ {
+     deny all;
+     return 403;
+    }
+
+    location / {
+      proxy_pass http://backend;
+    }
+
+    location /xxx {
+  	return 401;
+    }
+
+}
+
